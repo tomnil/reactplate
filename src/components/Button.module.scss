@@ -1,0 +1,19 @@
+
+.button {
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+    color: black;
+
+    &[color='blue' ]{
+        background-color: blue;
+        color: white;
+    }
+
+    &[color='red' ]{
+        background-color: red;
+        color: white
+    }
+
+}
+

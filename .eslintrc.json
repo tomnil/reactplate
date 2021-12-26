@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2020": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "import"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "semi": "error",
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/indent": [
+            "off",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "warn"
+        ]
+    }
+}

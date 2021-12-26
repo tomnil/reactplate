@@ -1,0 +1,21 @@
+.container {
+    box-shadow: 3px 3px 5px black;
+    width: fit-content;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.headline {
+    font-size: 20px;
+}
+
+.paragraph {
+    color: black;
+}
+
+.debuginfo {
+    font-size: 10px;
+    border: 1px solid red;
+    width: fit-content;
+    margin-left: auto;
+}
