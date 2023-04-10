@@ -8,8 +8,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint src/**/**.{ts,tsx}",
-    "eslint:fix": "eslint src/**/**.{ts,tsx} --fix"
+    "eslint": "./node_modules/.bin/eslint src/**/**.{ts,tsx}",
+    "eslint:fix": "./node_modules/.bin/eslint src/**/**.{ts,tsx} --fix"
   },
   "eslintConfig": {
     "extends": [
