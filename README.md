@@ -1,10 +1,10 @@
 # ReactPlate
 
-This project has been preconfigured to be a fast startup project showing some basic features such as scss, Routing with *v6* of `react-router-dom` and some other stuff.
+This project has been preconfigured to be a fast startup project showing some basic features such as scss, Routing with *v6* of `react-router-dom` and React 18.
 
 The complete list is:
 
-* Bootstrapped with v5 [Create React App](https://github.com/facebook/create-react-app).
+* Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 * Configured to use TypeScript
   * `tsc -b -v -w -i`  runs without errors
   * `tsconfig.json` has been configured to have strict settings
@@ -20,7 +20,18 @@ The complete list is:
   * npm start eslint
   * npm start eslint:fix
 * .gitignore is simple and clean
-* Finally it has been configured to use [React Preview](https://marketplace.visualstudio.com/items?itemName=zenclabs.reactpreview)
 
-Enjoy :)
 
+## preview.js
+
+Finally it has been configured to use [React Preview](https://previewjs.com/). Install the plugin and click the preview.js link above any component. The magic is shown when you edit something in the component.
+
+Click here and and text:
+
+![how to use](previewjs-how-to-use.png)
+
+Edit gives live updates without saving:
+
+![live preview anim](previewjs-anim.gif)
+
+# Enjoy :)
