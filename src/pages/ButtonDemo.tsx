@@ -1,7 +1,4 @@
-import React from "react";
-
 import Button from "../components/Button";
-
 
 const ButtonDemo = (): JSX.Element => {
 
