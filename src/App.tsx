@@ -37,7 +37,7 @@ function App(): JSX.Element {
       <Route path="subroutes/*" element={<SubRoutes />} />
 
       {/* 404 not found handler */}
-      <Route path="*" element={E404} />
+      <Route path="*" element={<E404 />} />
     </Routes>
   </>;
 }
