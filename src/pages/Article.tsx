@@ -22,19 +22,21 @@ const Article = (props: Props): JSX.Element => {
 	// All other stuff :)
 	const [headLine, setheadLine] = React.useState<string | undefined>(undefined);
 	const [body, setbody] = React.useState<string | undefined>(undefined);
+	const [message, setMessage] = React.useState<string>("Loading...");
 
 	React.useEffect(() => {
-
 		// Load article from the fake database
 		const article = fakeDB.find(a => a.ID === id);
 		if (article) {
 			setheadLine(article.HeadLine);
 			setbody(article.Body);
-		}
+		} else
+			setMessage("Article not found. ID=" + id);
+
 	}, [id]);
 
 	if (!headLine)
-		return <>Loading...</>;
+		return <>{message}</>;
 
 	return <div className={styles.container}>
 		<h2 className={styles.headline}>{headLine}</h2>
